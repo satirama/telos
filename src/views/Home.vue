@@ -1,13 +1,32 @@
 <template>
   <div class="home">
-    <div class="header">
-      <div>
-        <h1>Fullfill your most peculiar tea wishes.</h1>
-        <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+    <div class="header container">
+      <div class="content">
+        <div>
+          <h1>Fullfill your most peculiar tea wishes.</h1>
+          <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+        </div>
+        <img src="../assets/logo.png">
       </div>
-      <img src="../assets/logo.png">
     </div>
-    <img alt="Vue logo" src="../assets/logo.png">
+    <div class="info container">
+      <div class="content">
+        <div>
+          <h1>Fullfill your most peculiar tea wishes.</h1>
+          <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+        </div>
+        <img src="../assets/logo.png">
+      </div>
+    </div>
+    <div class="sign-up footer container">
+      <div class="content">
+        <div>
+          <h1>Fullfill your most peculiar tea wishes.</h1>
+          <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+        </div>
+        <img src="../assets/logo.png">
+      </div>
+    </div>
   </div>
 </template>
 
