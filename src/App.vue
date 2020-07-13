@@ -28,14 +28,14 @@ body {
   color: #0B1113;
 }
 .dark-background {
-  color: #0B1113;
+  background-color: #0B1113;
 }
 
 .light-text {
   color: #FFF;
 }
 .light-background {
-  color: #FFF;
+  background-color: #FFF;
 }
 
 .container {
@@ -46,6 +46,14 @@ body {
 .content {
   max-width: 1312px;
   width: 100%;
+}
+
+button {
+  width: 193px;
+  height: 42px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 #nav {
