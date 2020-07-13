@@ -5,24 +5,39 @@
         <div>
           <h1>Fullfill your most peculiar tea wishes.</h1>
           <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+          <button class="light-background">Sign up</button>
         </div>
         <img src="../assets/logo.png">
       </div>
     </div>
     <div class="info container">
       <div class="content">
+        <h1>Why us</h1>
         <div>
-          <h1>Fullfill your most peculiar tea wishes.</h1>
-          <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+          <div class="info-block">
+            <div class="dot"></div>
+            <p>Home Delivery</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+          </div>
+          <div class="info-block">
+            <div class="dot"></div>
+            <p>Tea Personalization</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+          </div>
+          <div class="info-block">
+            <div class="dot"></div>
+            <p>Premium Quality</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+          </div>
         </div>
-        <img src="../assets/logo.png">
       </div>
     </div>
     <div class="sign-up footer container">
       <div class="content">
         <div>
-          <h1>Fullfill your most peculiar tea wishes.</h1>
-          <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
+          <h4>SIGN UP</h4>
+          <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
+          <button class="dark-background">Sign up</button>
         </div>
         <img src="../assets/logo.png">
       </div>
