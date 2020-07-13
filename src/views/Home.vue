@@ -71,8 +71,19 @@ export default {
   width: 90%;
   border-radius: 32px 32px 0px 0px;
   display: block;
-  margin: 2rem auto -23% auto;
+  margin: 6rem auto -23% auto;
   max-width: 400px;
+}
+
+.header .content .text h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.header .content .text p {
+  font-size: 18px;
+  margin-bottom: 3rem;
+  line-height: 36px;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,6 +110,7 @@ export default {
 
 .header .content .text h1 {
   font-size: 68px;
+  line-height: 80px;
 }
 
 .header .content .text p {
