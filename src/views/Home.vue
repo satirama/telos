@@ -155,6 +155,10 @@ export default {
   margin-bottom: 3rem;
 }
 
+.info .content {
+  padding: 5.5rem 1rem 3rem 1rem ;
+}
+
 .info .content > div {
   display: flex;
   flex-direction: row;
