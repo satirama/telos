@@ -56,6 +56,11 @@ button {
   font-size: 16px;
 }
 
+.hide {
+  display: none;
+  opacity: 0;
+}
+
 #nav {
   padding: 30px;
 

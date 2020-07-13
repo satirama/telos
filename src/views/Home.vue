@@ -12,22 +12,25 @@
     </div>
     <div class="info container">
       <div class="content">
-        <h1>Why us</h1>
+        <h1 class="dark-text">Why us</h1>
         <div>
           <div class="info-block">
             <div class="dot"></div>
             <p>Home Delivery</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+            <p>&#8964;</p>
+            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
           </div>
           <div class="info-block">
             <div class="dot"></div>
             <p>Tea Personalization</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+            <p>&#8964;</p>
+            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
           </div>
           <div class="info-block">
             <div class="dot"></div>
             <p>Premium Quality</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+            <p>&#8964;</p>
+            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
           </div>
         </div>
       </div>
@@ -39,7 +42,7 @@
           <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
           <button class="dark-background">Sign up</button>
         </div>
-        <img src="/assets/tea_cup.jpg">
+        <!-- <img src="/assets/tea_cup.jpg"> -->
       </div>
     </div>
   </div>
@@ -71,7 +74,7 @@ export default {
   width: 90%;
   border-radius: 32px 32px 0px 0px;
   display: block;
-  margin: 6rem auto -23% auto;
+  margin: 6rem auto -50% auto;
   max-width: 400px;
 }
 
@@ -84,6 +87,40 @@ export default {
   font-size: 18px;
   margin-bottom: 3rem;
   line-height: 36px;
+}
+
+.info .content {
+  padding: 50% 1rem 3rem 1rem ;
+}
+
+.info .content > h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.info .content .info-block {
+  margin: 4rem auto;
+}
+
+.info .content .info-block p:first-of-type {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.info .content .info-block p:nth-child(3) {
+  margin-top: 0;
+  color: #646464;
+}
+
+.info .content .info-block .dot {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  background-color: #24404F;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,6 +153,12 @@ export default {
 .header .content .text p {
   font-size: 24px;
   margin-bottom: 3rem;
+}
+
+.info .content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 }
 </style>
