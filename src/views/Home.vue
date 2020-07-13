@@ -2,12 +2,12 @@
   <div class="home">
     <div class="header container">
       <div class="content">
-        <div>
+        <div class="text">
           <h1>Fullfill your most peculiar tea wishes.</h1>
           <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
           <button class="light-background">Sign up</button>
         </div>
-        <img src="../assets/logo.png">
+        <img src="/assets/tea_cup.jpg">
       </div>
     </div>
     <div class="info container">
@@ -39,7 +39,7 @@
           <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
           <button class="dark-background">Sign up</button>
         </div>
-        <img src="../assets/logo.png">
+        <img src="/assets/tea_cup.jpg">
       </div>
     </div>
   </div>
@@ -52,14 +52,58 @@ export default {
   name: 'Home',
 };
 </script>
-<style lang="scss" scoped>
-.home {
-  .header {
-    min-height: 513px;
-    background: #0B1113;
-    img {
-      float: right;
-    }
-  }
+<style lang="css" scoped>
+.header {
+  min-height: 513px;
+  background: #0B1113;
+  color: #FFF;
+}
+
+.header .content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.header .content img {
+  width: 90%;
+  border-radius: 32px 32px 0px 0px;
+  display: block;
+  margin: 2rem auto -23% auto;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+.header .content {
+  padding: 3rem;
+  justify-content: start;
+}
+
+.header .content img {
+  position: absolute;
+  right: 2rem;
+  bottom: -12%;
+  max-width: 505px;
+  border-radius: 32px 32px 0px 0px;
+  width: 40%;
+  margin: 0;
+}
+
+.header .content .text {
+  max-width: 615px;
+  width: 50%;
+  text-align: left;
+}
+
+.header .content .text h1 {
+  font-size: 68px;
+}
+
+.header .content .text p {
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
 }
 </style>
