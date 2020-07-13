@@ -36,6 +36,17 @@ body {
   color: #FFF;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1312px;
+  width: 100%;
+}
+
 #nav {
   padding: 30px;
 
