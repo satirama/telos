@@ -5,7 +5,7 @@
         <div class="text">
           <h1>Fullfill your most peculiar tea wishes.</h1>
           <p>From a common black tea to the rarest Da Hong Pao, each of them delivered right at your door.</p>
-          <button class="light-background">Sign up</button>
+          <button class="light-background dark-text">Sign up</button>
         </div>
         <img src="/assets/tea_cup.jpg">
       </div>
