@@ -35,15 +35,15 @@
         </div>
       </div>
     </div>
-    <div class="sign-up footer container">
+    <div class="signup-footer container">
       <div class="content">
         <div>
-          <h4>SIGN UP</h4>
+          <h2>SIGN UP</h2>
           <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
           <button class="dark-background">Sign up</button>
         </div>
-        <!-- <img src="/assets/tea_cup.jpg"> -->
       </div>
+      <img src="/assets/tea_pot_mobile.jpg">
     </div>
   </div>
 </template>
@@ -121,6 +121,39 @@ export default {
   display: block;
   margin: auto;
   background-color: #24404F;
+}
+
+.signup-footer {
+  background: #495664;
+  color: #FFF;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-footer .content {
+  width: 70%;
+  max-width: 400px;
+  padding: 3rem 1rem 4rem;
+}
+
+.signup-footer .content h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 1rem;
+}
+
+.signup-footer .content p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.signup-footer .content button {
+  color: #FFF;
+}
+
+.signup-footer img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
