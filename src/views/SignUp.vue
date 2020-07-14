@@ -25,7 +25,7 @@
           minlength="6"
           maxlength="10"
           v-model="password">
-        <button>Continue</button>
+        <button @click="submit">Continue</button>
       </form>
     </div>
   </div>
@@ -40,6 +40,14 @@ export default {
       email: '',
       errors: [],
     };
+  },
+  methods: {
+    submit() {
+      const name = document.querySelector('#name').checkValidity();
+      const email = document.querySelector('#email').checkValidity();
+      const password = document.querySelector('#password').checkValidity();
+      if (name && email && password) this.$router.push('store');
+    },
   },
 };
 </script>
