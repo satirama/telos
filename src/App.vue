@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <p>TEESH</p>
+      <router-link to="/">
+      </router-link>
     </div>
     <router-view/>
   </div>
@@ -82,16 +83,22 @@ button:hover {
 }
 
 #nav {
-  padding: 30px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0b111333;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+#nav p {
+  margin: 0;
+  color: #0B1113;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#nav a {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0B1113;
 }
 
 @media screen and (min-width: 768px) {
