@@ -2,7 +2,7 @@
   <div class="product">
     <img src="/assets/tea_cup.jpg">
     <p>Quantity: {{ product.quantity }}</p>
-    <p>Cost: {{ product.cost }}</p>
+    <p>Price: ${{ product.price }}</p>
     <p>Description: {{ product.description }}</p>
     <button>Add to cart</button>
   </div>

@@ -1,6 +1,10 @@
 <template>
   <div class="store container">
     <div class="store-products content">
+      <div class="cart">
+        <p>Budget: ${{ budget }}</p>
+        <p>{{ cart.length }} Cart</p>
+      </div>
       <h1>Store</h1>
       <div class="list">
         <div v-for="(product, index) in products" v-bind:key="index">
@@ -12,7 +16,6 @@
 </template>
 <script>
 import Product from '@/components/Product.vue';
-import json from '../assets/data.json';
 
 export default {
   name: 'Store',
@@ -20,14 +23,35 @@ export default {
     Product,
   },
   computed: {
+    budget() {
+      return this.$store.state.budget;
+    },
     products() {
-      console.log(this.$store.state.products, json, 'njkjknnjk');
       return this.$store.state.products;
+    },
+    cart() {
+      return this.$store.state.cart;
     },
   },
 };
 </script>
 <style scoped>
+.store .store-products .cart {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.store .store-products .cart p:first-child {
+  font-size: 85%;
+  margin: auto 1rem;
+  color: #646464;
+}
+
+.store .store-products .cart:hover p:nth-child(2)  {
+  text-decoration: underline;
+}
+
 .store .store-products .list {
   display: flex;
   flex-flow: wrap;
