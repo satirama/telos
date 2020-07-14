@@ -14,23 +14,15 @@
       <div class="content">
         <h1 class="dark-text">Why us</h1>
         <div>
-          <div class="info-block">
+          <div
+            class="info-block"
+            @click="showInfoBlocks(index)"
+            v-for="(info, index) in infoTexts"
+            v-bind:key="index">
             <div class="dot"></div>
-            <p>Home Delivery</p>
-            <p>&#8964;</p>
-            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
-          </div>
-          <div class="info-block">
-            <div class="dot"></div>
-            <p>Tea Personalization</p>
-            <p>&#8964;</p>
-            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
-          </div>
-          <div class="info-block">
-            <div class="dot"></div>
-            <p>Premium Quality</p>
-            <p>&#8964;</p>
-            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.</p>
+            <p>{{ info.title }}</p>
+            <p>{{ info.isOpen ? "&#8963;" : "&#8964;"}}</p>
+            <p class="hide description">{{ info.description }}</p>
           </div>
         </div>
       </div>
@@ -54,6 +46,41 @@
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      infoTexts: [
+        {
+          title: 'Home Delivery',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.',
+          isOpen: false,
+        },
+        {
+          title: 'Tea Personalization',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.',
+          isOpen: false,
+        },
+        {
+          title: 'Premium Quality',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Maecenas tortor lorem, vehicula eget est sed, malesuada suscipit  magna. Curabitur eu consectetur augue.',
+          isOpen: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    showInfoBlocks(element) {
+      const arr = document.querySelectorAll('.home .info .info-block .description');
+      arr.forEach((el, index) => {
+        if (index === element) {
+          el.classList.toggle('hide');
+          this.infoTexts[index].isOpen = !this.infoTexts[index].isOpen;
+        } else {
+          el.classList.add('hide');
+          this.infoTexts[index].isOpen = false;
+        }
+      });
+    },
+  },
 };
 </script>
 <style lang="css" scoped>
@@ -116,13 +143,10 @@ export default {
   color: #000;
 }
 
-.info .content .info-block:hover p:first-of-type {
-  text-decoration: underline;
-}
-
 .info .content .info-block p:nth-child(3) {
   margin-top: 0;
   color: #646464;
+  font-size: 16px;
 }
 
 .info .content .info-block:hover p:nth-child(3) {
@@ -216,6 +240,11 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.info .content .info-block {
+  width: 25%;
+  max-width: 336px;
 }
 
 .signup-footer {
