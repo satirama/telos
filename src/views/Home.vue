@@ -116,13 +116,17 @@ export default {
   color: #000;
 }
 
-.info .content .info-block:hover {
+.info .content .info-block:hover p:first-of-type {
   text-decoration: underline;
 }
 
 .info .content .info-block p:nth-child(3) {
   margin-top: 0;
   color: #646464;
+}
+
+.info .content .info-block:hover p:nth-child(3) {
+  font-weight: 900;
 }
 
 .info .content .info-block .dot {
@@ -132,6 +136,10 @@ export default {
   display: block;
   margin: auto;
   background-color: #24404F;
+}
+
+.info .content .info-block:hover .dot {
+  opacity: 0.95;
 }
 
 .signup-footer {
