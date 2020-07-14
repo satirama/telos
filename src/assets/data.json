@@ -1,0 +1,50 @@
+[
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 3,
+    "description": "Lorem ipsum",
+    "cost": 10
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 4,
+    "description": "Lorem ipsum",
+    "cost": 5
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 2,
+    "description": "Lorem ipsum",
+    "cost": 8
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 1,
+    "description": "Lorem ipsum",
+    "cost": 12
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 3,
+    "description": "Lorem ipsum",
+    "cost": 10
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 4,
+    "description": "Lorem ipsum",
+    "cost": 5
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 2,
+    "description": "Lorem ipsum",
+    "cost": 8
+  },
+  {
+    "img": "/assets/tea_cup.jpg",
+    "quantity": 1,
+    "description": "Lorem ipsum",
+    "cost": 12
+  }
+]

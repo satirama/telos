@@ -7,7 +7,14 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'App',
+  mounted() {
+    this.$store.dispatch('getProducts');
+  },
+};
+</script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 

@@ -1,9 +1,10 @@
 <template>
   <div class="product">
     <img src="/assets/tea_cup.jpg">
-    <p>Quantity:</p>
-    <p>Cost:</p>
-    <p>Description:</p>
+    <p>Quantity: {{ product.quantity }}</p>
+    <p>Cost: {{ product.cost }}</p>
+    <p>Description: {{ product.description }}</p>
+    <button>Add to cart</button>
   </div>
 </template>
 
@@ -11,7 +12,7 @@
 export default {
   name: 'Product',
   props: {
-    msg: String,
+    product: Object,
   },
 };
 </script>
@@ -29,5 +30,9 @@ export default {
 .product p {
   margin: 0.5rem 0;
   font-size: 80%;
+}
+
+.product button {
+  max-width: 100%;
 }
 </style>
