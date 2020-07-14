@@ -1,7 +1,7 @@
 <template>
   <div class="store container">
     <div class="store-products content">
-      <div class="cart">
+      <div class="cart" @click="$router.push('cart')">
         <p>Budget: ${{ budget }}</p>
         <p>{{ cart.length }} Cart</p>
       </div>

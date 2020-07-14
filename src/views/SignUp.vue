@@ -53,9 +53,7 @@ export default {
 </script>
 <style scoped>
 .signup {
-  color: #FFF;
-  min-height: 100vh;
-  background: #495664;
+  min-height: 50vh;
 }
 
 .signup .login {
