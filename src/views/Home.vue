@@ -42,8 +42,9 @@
           <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
           <button class="dark-background">Sign up</button>
         </div>
+        <img class="desktop" src="/assets/tea_pot.png">
       </div>
-      <img src="/assets/tea_pot_mobile.jpg">
+      <img class="mobile" src="/assets/tea_pot_mobile.jpg">
     </div>
   </div>
 </template>
@@ -189,7 +190,7 @@ export default {
 }
 
 .info .content {
-  padding: 5.5rem 1rem 3rem 1rem ;
+  padding: 7rem 1rem 6rem 1rem ;
 }
 
 .info .content > div {
@@ -197,5 +198,47 @@ export default {
   flex-direction: row;
   justify-content: space-around;
 }
+
+.signup-footer .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1312px;
+  padding: 0rem 0 0 2rem;
+  max-height: 387px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.signup-footer .content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 1rem;
+  width: 40%;
+  max-width: 480px;
+  text-align: left;
+}
+
+.signup-footer .content h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: 0;
+}
+
+.signup-footer .content p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.signup-footer .content img {
+  width: 60%;
+  max-width: 822px;
+  height: 100%;
+  margin: 0 -9px -9px 0;
+}
+
 }
 </style>

@@ -61,6 +61,14 @@ button {
   opacity: 0;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: inherit;
+}
+
 #nav {
   padding: 30px;
 
@@ -71,6 +79,15 @@ button {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: inherit;
   }
 }
 </style>
