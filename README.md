@@ -5,6 +5,7 @@ The app does the requested user stories. But with a few more functionalities, we
 * Cart
   * Group repeated items and show the selected quantity of each product.
   * Add an option to remove an item from the cart.
+  * Add away to return to store
 * Store
   * Select the quantity of a certain product.
   * Modify budget.
