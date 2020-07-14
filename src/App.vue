@@ -92,6 +92,7 @@ button:hover {
 #nav p {
   margin: 0;
   color: #0B1113;
+  font-size: 24px;
 }
 
 #nav a {
