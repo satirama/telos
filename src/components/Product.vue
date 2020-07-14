@@ -1,6 +1,7 @@
 <template>
   <div class="product" v-bind:class="{notavailable: notAvailable}">
     <img src="/assets/tea_cup.jpg">
+    <p>Name: {{ product.name }}</p>
     <p>Quantity: {{ product.quantity }}</p>
     <p>Price: ${{ product.price }}</p>
     <p>Description: {{ product.description }}</p>

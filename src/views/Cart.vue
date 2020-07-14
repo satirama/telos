@@ -5,6 +5,7 @@
       <div class="item" v-for="(item, index) in cart" v-bind:key="index">
         <img :src="item.img">
         <p>ID: {{item.id}}</p>
+        <p>Name: {{item.name}}</p>
         <p>Price: {{item.price}}</p>
         <p>Description: {{item.description}}</p>
       </div>
@@ -36,10 +37,11 @@ export default {
 <style scoped>
 .cart .cart-list .item {
   margin: 1.4rem auto;
+  width: 150px;
 }
 
 .cart .cart-list .item img {
-  width: 80px;
+  width: 100px;
 }
 
 .cart .cart-list .item p {

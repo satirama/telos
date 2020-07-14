@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 3,
     "description": "Lorem ipsum",
@@ -8,6 +9,7 @@
   },
   {
     "id": 1,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 4,
     "description": "Lorem ipsum",
@@ -15,6 +17,7 @@
   },
   {
     "id": 2,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 2,
     "description": "Lorem ipsum",
@@ -22,6 +25,7 @@
   },
   {
     "id": 3,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 1,
     "description": "Lorem ipsum",
@@ -29,6 +33,7 @@
   },
   {
     "id": 4,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 3,
     "description": "Lorem ipsum",
@@ -36,6 +41,7 @@
   },
   {
     "id": 5,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 4,
     "description": "Lorem ipsum",
@@ -43,6 +49,7 @@
   },
   {
     "id": 6,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 2,
     "description": "Lorem ipsum",
@@ -50,6 +57,7 @@
   },
   {
     "id": 7,
+    "name": "Lorem",
     "img": "/assets/tea_cup.jpg",
     "quantity": 1,
     "description": "Lorem ipsum",

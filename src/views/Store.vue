@@ -40,6 +40,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  padding-right: 2rem;
 }
 
 .store .store-products .cart p:first-child {
