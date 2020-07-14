@@ -134,6 +134,8 @@ export default {
   margin: 4rem auto;
   width: fit-content;
   cursor: pointer;
+  max-width: 500px;
+  width: 90%;
 }
 
 .info .content .info-block p:first-of-type {
