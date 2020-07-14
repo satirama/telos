@@ -42,7 +42,7 @@
           <p>Get the best tea experience you’ll be ever taste right at your door each month</p>
           <button class="dark-background">Sign up</button>
         </div>
-        <img class="desktop" src="/assets/tea_pot.png">
+        <div class="desktop bg-img"></div>
       </div>
       <img class="mobile" src="/assets/tea_pot_mobile.jpg">
     </div>
@@ -79,6 +79,10 @@ export default {
   max-width: 400px;
 }
 
+.header .content .text {
+  max-width: 500px;
+}
+
 .header .content .text h1 {
   font-size: 48px;
   line-height: 60px;
@@ -101,6 +105,8 @@ export default {
 
 .info .content .info-block {
   margin: 4rem auto;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .info .content .info-block p:first-of-type {
@@ -108,6 +114,10 @@ export default {
   font-size: 24px;
   line-height: 36px;
   color: #000;
+}
+
+.info .content .info-block:hover {
+  text-decoration: underline;
 }
 
 .info .content .info-block p:nth-child(3) {
@@ -155,6 +165,7 @@ export default {
 
 .signup-footer img {
   width: 100%;
+  filter: brightness(0.6);
 }
 
 @media screen and (min-width: 768px) {
@@ -199,15 +210,18 @@ export default {
   justify-content: space-around;
 }
 
+.signup-footer {
+  height: 387px;
+}
+
 .signup-footer .content {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   max-width: 1312px;
-  padding: 0rem 0 0 2rem;
-  max-height: 387px;
+  padding: 0;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .signup-footer .content > div {
@@ -215,7 +229,7 @@ export default {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0rem 2rem 0rem 3rem;
   width: 40%;
   max-width: 480px;
   text-align: left;
@@ -233,11 +247,13 @@ export default {
   line-height: 36px;
 }
 
-.signup-footer .content img {
+.signup-footer .content .bg-img {
   width: 60%;
   max-width: 822px;
-  height: 100%;
-  margin: 0 -9px -9px 0;
+  background-image: linear-gradient(rgba(11, 17, 19, 0.36), rgba(11, 17, 19, 0.36)), url("/assets/tea_pot.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 }
